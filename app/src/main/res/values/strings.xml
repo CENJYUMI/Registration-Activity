@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">APExercise5</string>
+    <string name="app_contactName">Name</string>
+    <string name="app_contactNumber">Phone Number</string>
+    <string name="app_contactEmail">Email</string>
+    <string name="app_contactAddress">Address</string>
+    <string name="app_city">City</string>
+    <string name="app_zipcode">Zip Code</string>
+    <string name="app_country">Country</string>
+    <string name="app_org">Organization</string>
+    <string name="app_profession">Profession</string>
+    <string name="app_submit">Register</string>
+    <string name="app_registration">Registration</string>
+    <string name="app_contactDetails">Profile Information</string>
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:paddingStart="10dp"
+    tools:context=".MainActivity">
+
+    <!-- Add EditText fields for the contact information -->
+
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="@string/app_registration"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFB7FB"
+
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <!-- Add EditText fields for the remaining contact information -->
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFB7FB"
+        android:drawableStart="@drawable/baseline_local_phone_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="@string/app_contactNumber"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFB7FB"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="@string/app_contactEmail"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFB7FB"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/arbutus_slab"
+        android:hint="@string/app_contactAddress"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFB7FB"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtcity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="#FFB7FB"
+            android:drawableStart="@drawable/baseline_location_city_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/app_city"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtzip"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="#FFB7FB"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:ems="10"
+            android:hint="@string/app_zipcode"
+            android:inputType="number"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/margin"
+        android:layout_width="382dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtcountry"
+            android:layout_width="387dp"
+            android:layout_height="51dp"
+            android:layout_weight="1"
+            android:background="#FFB7FB"
+            android:drawableStart="@drawable/baseline_public_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/app_country"
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/organization"
+            android:layout_width="387dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFB7FB"
+            android:drawableStart="@drawable/baseline_people_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/app_org"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/professtion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFB7FB"
+            android:drawableStart="@drawable/baseline_portrait_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:fontFamily="@font/arbutus_slab"
+            android:hint="@string/app_profession"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:paddingStart="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
